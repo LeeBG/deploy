@@ -1,321 +1,410 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>06-naverlogin.html</title>
+        <title>서유리의 쇼핑몰 다를</title>
         <style>
-            td {
-                padding: 5px 10px;
-            }
-            #method {
-                border-left: 1px solid lightgray;
-                border-radius: 5px;
-                cursor: pointer;
-            }
-            #frame {
-                width: 500px;
-                margin: auto;
-            }
-            #loginborder {
-                border: 1px solid lightgray;
-                border-radius: 5px;
-            }
-            #header {
-                display: flex;
-                justify-content: flex-end;
-                flex-flow: wrap;
-                margin-bottom: 40px;
-            }
-            select {
-                position: absolute;
-                top: 20px;
-                right: 380px;
-                font-size: 16px;
-                padding: 10px;
-            }
-            #main {
-                width: 100%;
-            }
-            #footer {
-                width: 100%;
-                height: 200px;
-            }
-            #logo {
-                width: 100%;
-                text-align: center;
-                font-weight: bold;
-                font-family: "Franklin Gothic Medium", "Arial Narrow", Arial,
-                    sans-serif;
-                font-size: 30px;
-            }
-            #logintable {
-                border: 1px solid lightgrey;
-                color: black;
-            }
-            table {
-                width: 100%;
-                border-radius: 5px;
-            }
-
-            label {
-                width: 100%;
-                margin: 0;
-                padding: 0;
-            }
-
-            form {
-                display: flex;
-                flex-flow: wrap;
-            }
-
-            form > input {
-                width: 100%;
-                height: 50px;
-                margin: 10px 20px;
-                border-radius: 5px;
-            }
-
-            label {
-                width: 40%;
-                margin: 10px 20px;
-            }
-
-            #login {
-                margin: 20px;
-                color: white;
-                background-color: #03c75a;
-                border-radius: 5px;
-                border: 1px solid green;
-                font-size: 20px;
-                cursor: pointer;
-            }
-
-            th {
-                padding: 10px 20px;
-            }
-
-            #footer {
-                display: flex;
-                flex-wrap: wrap;
-            }
-
-            input:active {
-                border: 1px solid #03c75a;
-            }
-
-            input:focus {
-                background-color: #b2eacc;
-                border: 1px solid #b2eacc;
-            }
-
-            img {
-                width: 100%;
-                margin-bottom: 100px;
-                cursor: pointer;
-            }
-
-            ul {
-                padding-left: 0px;
-                justify-content: center;
-                display: flex;
-                width: 100%;
-                list-style: none;
+            html {
                 font-size: 12px;
             }
 
-            ul > li {
+            .frame {
+                width: 1320px;
+                margin: auto;
+            }
+
+            .header {
+                display: flex;
+                justify-content: space-between;
+                flex-flow: wrap;
+            }
+
+            .header_lmenu {
+                width: 350px;
+                display: flex;
+            }
+
+            .header_rmenu {
+                width: 250px;
+                display: flex;
+            }
+
+            .header_lmenu > ul > li {
                 cursor: pointer;
             }
 
-            #footer-item {
-                justify-content: center;
+            .header_rmenu > ul > li {
+                cursor: pointer;
+            }
+
+            .header_logo {
+                padding-top: 50px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .header_logo:hover {
+                opacity: 0.5;
+            }
+
+            .header_social_search {
                 display: flex;
                 width: 100%;
+                justify-content: space-between;
             }
 
-            input[type="checkbox"] {
-                margin: 0px;
-                margin-right: 5px;
-                border-radius: 100px;
-                -webkit-appearance: none;
-                -moz-appearance: none;
-                appearance: none;
-                background-color: #f0f0f0;
-                cursor: pointer;
-                height: 20px;
-                outline: 0;
-                width: 20px;
+            .header_social {
+                width: 200px;
             }
-            input[type="checkbox"]::after {
+
+            .header_search > input {
+                margin: auto;
+            }
+
+            .header_search > input {
+                width: 200px;
+                font-size: 12px;
+                color: lightgrey;
+                border: 1px solid lightgrey;
+                margin-top: 15px;
+                padding: 10px;
+            }
+
+            .header_search > input::-webkit-input-placeholder {
+                text-align: right;
+            }
+
+            .main {
+                display: flex;
+            }
+
+            .main_menu {
+                width: 100%;
+                display: flex;
+                flex-flow: wrap;
+            }
+
+            .main_menu_button {
+                border-left: 1px solid #dfdfdf;
+                border-right: 1px solid #dfdfdf;
+                width: 40px;
+                padding: 20px;
+            }
+
+            .main_menu_button:hover {
+                background-color: grey;
+            }
+
+            .main_menu_button > h1 {
                 margin: 0px;
-                margin-right: 5px;
-                border: solid #dfdfdf;
-                border-width: 0 2px 2px 0;
-                border-radius: 100px;
-                content: "";
-                display: none;
-                height: 40%;
-                left: 40%;
+                margin-left: 10px;
+            }
+
+            .main_menu_list {
+                width: 1200px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .main_menu_list > ul {
+                display: flex;
+                margin: 0;
+                font-size: 16px;
+            }
+
+            .main_menu_list > ul > li {
                 position: relative;
-                top: 20%;
-                transform: rotate(45deg);
-                width: 15%;
+                cursor: pointer;
             }
-            input[type="checkbox"]:checked {
+
+            .main_image {
+                width: 100%;
+                background-size: 100%;
+            }
+
+            .footer {
+                border: 1px solid green;
+            }
+
+            ul {
+                width: 100%;
+                justify-content: space-around;
+                padding-left: 0px;
+                list-style: none;
+                display: flex;
+            }
+
+            li > img {
+                margin: 10px;
+                width: 30px;
+            }
+
+            .rona {
+                padding: 25px 0;
+                color: lightpink;
+            }
+
+            li:hover {
+                color: #ccc;
+            }
+
+            .side_bar {
+                font-size: 12px;
+                position: fixed;
+                right: 0px;
+                top: 200px;
+                z-index: 1;
+                background-color: white;
+            }
+
+            .side_bar > div {
+                padding: 10px;
+                border: 1px solid black;
+                text-align: center;
+            }
+
+            .side_bar > div > h1 {
                 margin: 0px;
-                margin-right: 5px;
-                background: #03c75a;
-                border-radius: 100px;
             }
-            input[type="checkbox"]:checked::after {
+
+            hr {
+                width: 100vw;
+                margin: 0;
+                color: lightgrey;
+                border: 0.5px solid #dfdfdf;
+            }
+
+            .dropbtn {
+                position: relative;
+                padding: 25px 0px;
+                color: black;
+                font-size: 16px;
+                border: none;
+                cursor: pointer;
+                background-color: white;
+            }
+
+            .dropdown {
+                display: inline-block;
+            }
+
+            .dropbtn:hover {
+                color: #ccc;
+            }
+
+            .dropdown-content {
+                position: absolute;
+                display: none;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+                z-index: 1;
+            }
+
+            .dropdown-content a {
+                color: black;
+                padding: 12px 16px;
+                text-decoration: none;
                 display: block;
             }
 
-            a {
-                text-decoration: none;
+            .dropdown-content a:hover {
+                background-color: #f1f1f1;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            .dropdown:hover .dropbtn {
+                color: #ccc;
+            }
+
+            .side_bar_items {
+                cursor: pointer;
+            }
+            .side_bar_items > h1:hover {
+                color: #ccc;
             }
         </style>
     </head>
     <body>
-        <div style="height: 100px; width: 1000px">
-            <select name="language">
-                <option>한국어</option>
-                <option>English</option>
-                <option>中文</option>
-                <option>中文</option>
-            </select>
-        </div>
-        <div id="frame">
-            <div id="header">
-                <div id="logo">
-                    <h1 style="color: #03c75a">NAVER</h1>
+        <div class="frame">
+            <div class="header">
+                <div class="header_lmenu">
+                    <ul>
+                        <li>LOGIN</li>
+                        <li>JOIN US</li>
+                        <li style="display: flex">
+                            CART
+                            <div
+                                style="
+                                    text-align: center;
+                                    width: 20px;
+                                    border-radius: 50%;
+                                    background-color: #dfdfdf;
+                                    color: white;
+                                "
+                            >
+                                0
+                            </div>
+                        </li>
+                        <li>ORDER</li>
+                        <li><b>MY PAGE</b></li>
+                        <li><b>BOOKMARK</b></li>
+                    </ul>
+                </div>
+                <div class="header_rmenu">
+                    <ul>
+                        <li>공지사항</li>
+                        <li>이벤트</li>
+                        <li>상품문의</li>
+                        <li>상품후기</li>
+                    </ul>
                 </div>
             </div>
-
-            <div id="main">
-                <table id="logintable">
-                    <tr>
-                        <th id="method">ID 로그인</th>
-                        <th
-                            id="method"
-                            style="
-                                border-bottom: 1px solid #dfdfdf;
-                                background-color: #f1f1f1;
-                                color: grey;
-                            "
-                        >
-                            [1] 일화용 번호
-                        </th>
-                        <th
-                            id="method"
-                            style="
-                                border-bottom: 1px solid #dfdfdf;
-                                background-color: #f1f1f1;
-                                color: grey;
-                            "
-                        >
-                            QR 코드
-                        </th>
-                    </tr>
-                    <tr>
-                        <td colspan="3">
-                            <form action="#">
-                                <input
-                                    style="
-                                        border: 1px solid #ccc;
-                                        margin-bottom: 0px;
-                                    "
-                                    type="text"
-                                    placeholder="🛹 아이디"
-                                />
-                                <input
-                                    style="
-                                        border: 1px solid #ccc;
-                                        margin-top: 0px;
-                                    "
-                                    type="password"
-                                    placeholder="🦼 비밀번호"
-                                />
-                                <label for="check1"
-                                    ><input
-                                        type="checkbox"
-                                        id="check1"
-                                        name="check1"
-                                        value="remain"
-                                    />로그인 상태 유지</label
-                                >
-                                <label style="text-align: end">ip보안</label>
-                                <input
-                                    type="submit"
-                                    id="login"
-                                    value="로그인"
-                                />
-                            </form>
-                        </td>
-                    </tr>
-                </table>
-                <table>
-                    <tr>
-                        <td colspan="3">
-                            <ul>
-                                <li>비밀번호 찾기　|　</li>
-                                <li>아이디 찾기　|　</li>
-                                <li>회원가입</li>
-                            </ul>
-                        </td>
-                    </tr>
-                </table>
+        </div>
+        <hr />
+        <div class="frame">
+            <div class="header_logo">
+                <img src="logo.png" alt="로고-2(대문자)" />
             </div>
-
-            <div id="footer">
-                <img src="banner.jpg" />
-                <div id="footer-item">
-                    <ul>
+            <div class="header_social_search">
+                <div class="header_social">
+                    <ul style="margin: 0px; justify-content: flex-start">
                         <li>
-                            <a
-                                href="https://policy.naver.com/rules/service.html"
-                                >이용약관　|
-                            </a>
+                            <img src="free-icon-facebook-145802.png" />
                         </li>
                         <li>
-                            <a
-                                href="https://policy.naver.com/rules/privacy.html"
-                                >　개인정보처리방침 |</a
-                            >
+                            <img src="free-icon-instagram-4138124.png" />
                         </li>
                         <li>
-                            <a
-                                href="https://policy.naver.com/rules/disclaimer.html"
-                                >　책임의 한계와 법적고지 |</a
-                            >
-                        </li>
-                        <li>
-                            <a
-                                href="https://help.naver.com/service/5640/category/bookmark?lang=ko"
-                                >　회원정보 고객센터</a
-                            >
+                            <img src="free-icon-youtube-logo-37922.png" />
                         </li>
                     </ul>
                 </div>
-                <div id="footer-item">
-                    <a href="https://www.navercorp.com/">
-                        <h3
-                            style="
-                                color: #03c75a;
-                                font-weight: bold;
-                                font-family: 'Franklin Gothic Medium',
-                                    'Arial Narrow', Arial, sans-serif;
-                            "
-                        >
-                            NAVER 　
-                        </h3>
-                    </a>
-                    <h4>Copyright</h4>
-                    <h4 style="font-weight: 600">@ Naver Corp.</h4>
-                    <h4>All Rights Reserved.</h4>
+                <div class="header_search">
+                    <input
+                        type="text"
+                        name="search"
+                        id="search"
+                        placeholder="🔍"
+                    />
                 </div>
             </div>
+        </div>
+
+        <hr style="width: 100vw; z-index: 0" />
+        <div class="frame">
+            <div class="main">
+                <div class="main_menu">
+                    <div class="main_menu_button"><h1>☰</h1></div>
+                    <div class="main_menu_list">
+                        <ul>
+                            <li class="rona">RONA universe</li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">남성의류</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">아우터</a>
+                                        <a href="#">탑</a>
+                                        <a href="#">세트</a>
+                                        <a href="#">바텀</a>
+                                        <a href="#">악세사리</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">아우터</button>
+                                    <div class="dropdown-content"></div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">탑</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">니트</a>
+                                        <a href="#">셔츠</a>
+                                        <a href="#">블라우스</a>
+                                        <a href="#">후드, 맨투맨</a>
+                                        <a href="#">반팔 T</a>
+                                        <a href="#">긴팔 T</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">드레스</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">롱/미디</a>
+                                        <a href="#">미니</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">바텀</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">팬츠</a>
+                                        <a href="#">스커트</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">악세사리</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">ER</a>
+                                        <a href="#">NC</a>
+                                        <a href="#">BC</a>
+                                        <a href="#">Etc</a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <hr style="width: 100vw; z-index: 0" />
+        <div class="frame">
+            <div class="main_image">
+                <img src="main.jpg" width="100%" />
+            </div>
+        </div>
+
+        <div class="side_bar">
+            <div
+                style="background-color: black; color: white; font-weight: 700"
+            >
+                <h1><</h1>
+            </div>
+            <div class="side_bar_items" title="검색"><h1>🔍</h1></div>
+            <div class="side_bar_items" title="주문 배송조회"><h1>🚚</h1></div>
+            <div class="side_bar_items" title="장바구니"><h1>🛒</h1></div>
+            <div class="side_bar_items" title="관심상품"><h1>❤</h1></div>
+            <div class="side_bar_items" title="최근 본 상품"><h1>🕗</h1></div>
+            <div
+                class="side_bar_items"
+                title="카카오톡 상담"
+                style="
+                    background-image: url(kakaotalk.jpg);
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    height: 40px;
+                "
+            ></div>
+            <div class="side_bar_items" title="검색">
+                <h1>∧</h1>
+                <h1>∨</h1>
+            </div>
+        </div>
+        <div class="frame">
+            <div class="footer"></div>
         </div>
     </body>
 </html>
