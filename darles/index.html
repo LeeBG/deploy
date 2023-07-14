@@ -34,7 +34,7 @@
                 display: flex;
                 justify-content: space-between;
                 flex-flow: wrap;
-                opacity: 0.9;
+                opacity: 1;
             }
 
             .header_lmenu {
@@ -112,7 +112,6 @@
                 width: 100%;
                 display: flex;
                 flex-flow: wrap;
-                opacity: 0.9;
             }
 
             .main_menu_button {
@@ -219,18 +218,20 @@
 
             .dropdown-content {
                 position: absolute;
+                right: -100px;
                 display: none;
-                background-color: #f9f9f9;
                 min-width: 160px;
                 box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
                 z-index: 1;
             }
 
             .dropdown-content a {
+                background-color: white;
                 color: black;
                 padding: 12px 16px;
                 text-decoration: none;
                 display: block;
+                opacity: 1;
             }
 
             .dropdown-content a:hover {
