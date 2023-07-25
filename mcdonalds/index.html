@@ -56,10 +56,15 @@
                 margin-right: 100px;
             }
             #nav {
+                position: relative;
                 font-weight: bold;
+                height: 140px;
+                margin-bottom: 0;
             }
             #nav > li {
-                padding: 10px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 margin-right: 85px;
             }
             #menu > #nav2 {
@@ -169,6 +174,7 @@
                 font-weight: 700;
                 margin-bottom: 50px;
             }
+            /*더보기*/
             #lives > #more {
                 background-image: url("https://www.mcdonalds.co.kr/kor/images/common/btn_more.png");
                 text-align: center;
@@ -285,6 +291,34 @@
                 height: 48px;
                 margin: auto;
             }
+
+            .dropbox {
+                position: absolute;
+                width: 100%;
+                background-color: white;
+                height: 300px;
+                top: 140px;
+                border-top: 1px solid #ccc;
+            }
+
+            .dropdownitem {
+                padding-top: 10px;
+                width: fit-content;
+                margin: auto;
+                margin-left: 550px;
+            }
+
+            .dropdownitem > ol {
+                list-style: none;
+            }
+
+            .dropdownitem > ol > li {
+                margin-bottom: 10px;
+            }
+
+            .hidden {
+                display: none;
+            }
         </style>
     </head>
     <body>
@@ -312,7 +346,7 @@
                     </div>
                 </div>
             </header>
-
+            <div></div>
             <main>
                 <div id="ad">
                     <!-- Carousel -->
@@ -541,5 +575,77 @@
                 <a href="#"><div id="top"></div></a>
             </div>
         </div>
+        <div class="dropbox">
+            <div class="dropdownitem flex">
+                <ol>
+                    <li>버거</li>
+                    <li>맥런치</li>
+                    <li>맥모닝</li>
+                    <li>해피스낵</li>
+                    <li>사이드&amp;디저트</li>
+                    <li>맥카페&amp;음료</li>
+                    <li>해피밀</li>
+                </ol>
+                <ol>
+                    <li>매장찾기</li>
+                    <li>맥딜리버리</li>
+                    <li>맥드라이브</li>
+                    <li>임차문의</li>
+                </ol>
+                <ol>
+                    <li>프로모션</li>
+                    <li>새로운 소식</li>
+                    <li>이달의 해피밀</li>
+                </ol>
+                <ol>
+                    <li>브랜드 소개</li>
+                    <li>사회적 책임과 지원</li>
+                    <li>맥도날드 품질 이야기</li>
+                    <li>맥도날드 사람들</li>
+                </ol>
+            </div>
+        </div>
+        <script>
+            const menu1 = document.querySelector("#nav > li:nth-child(1)");
+            const menu2 = document.querySelector("#nav > li:nth-child(2)");
+            const menu3 = document.querySelector(" #nav > li:nth-child(3)");
+            const menu4 = document.querySelector(" #nav > li:nth-child(4)");
+            const dropbox = document.querySelector(".dropbox");
+            menu1.addEventListener("mouseover", (event) => {
+                menu1.style.borderBottom = "3px solid #ffba00 ";
+                dropbox.classList.remove("hidden");
+            });
+            menu1.addEventListener("mouseleave", (event) => {
+                menu1.style.border = "none";
+                dropbox.classList.add("hidden");
+            });
+
+            menu2.addEventListener("mouseleave", (event) => {
+                menu2.style.border = "none";
+                dropbox.classList.add("hidden");
+            });
+            menu2.addEventListener("mouseover", (event) => {
+                menu2.style.borderBottom = "3px solid #ffba00 ";
+                dropbox.classList.remove("hidden");
+            });
+
+            menu3.addEventListener("mouseleave", (event) => {
+                menu3.style.border = "none";
+                dropbox.classList.add("hidden");
+            });
+            menu3.addEventListener("mouseover", (event) => {
+                menu3.style.borderBottom = "3px solid #ffba00 ";
+                dropbox.classList.remove("hidden");
+            });
+
+            menu4.addEventListener("mouseleave", (event) => {
+                menu4.style.border = "none";
+                dropbox.classList.add("hidden");
+            });
+            menu4.addEventListener("mouseover", (event) => {
+                menu4.style.borderBottom = "3px solid #ffba00 ";
+                dropbox.classList.remove("hidden");
+            });
+        </script>
     </body>
 </html>
