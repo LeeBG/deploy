@@ -17,7 +17,7 @@
 |  02  | 농협은행 |    농협은행의 일부 구현     |    [바로가기][NH]     |
 |  03  |  이케아  |    이케아 쇼핑몰 구현       |   [바로가기][ikea]    |
 |  04  | 맥도날드 |  맥도날드 홈페이지 외형 구현 | [바로가기][mcdonalds] |
-|  05  |          |                             |   [바로가기][day06]   |
+|  05  |네이버 뉴스| 네이버 뉴스 중 IT/과학 뉴스화면 구현|   [바로가기][navernews]   |
 |  06  |          |                             |   [바로가기][day07]   |
 
 [naver]: https://leebg.github.io/deploy/naver/
@@ -25,3 +25,4 @@
 [NH]: https://leebg.github.io/deploy/NH/
 [ikea]: https://leebg.github.io/deploy/ikea/
 [mcdonalds]: https://leebg.github.io/deploy/mcdonalds/
+[navernews]: https://leebg.github.io/deploy/navernews/
