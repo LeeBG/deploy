@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>플레이웨어즈에 오신것을 환영합니다.</title>
+        <link
+            rel="icon"
+            href="http://playwares.com/files/attach/xeicon/favicon.ico"
+        />
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        <header>
+            <div class="frame flex">
+                <div class="header_logo"></div>
+                <div class="header_menu">
+                    <div class="top_menu flex space_between">
+                        <div class="top_sns_menu flex">
+                            <ul class="flex">
+                                <li>
+                                    <a href="#"
+                                        ><img src="link_facebook.png"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        ><img src="link_naverblog.png"
+                                    /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="postnaver.png" /></a>
+                                </li>
+                                <li>
+                                    <a href="#"><img src="youtube.png" /></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="top_auth_menu flex">
+                            <ul class="flex">
+                                <li><a href="#">로그인</a></li>
+                                <li><a href="#">회원가입</a></li>
+                                <li>
+                                    <input
+                                        type="text"
+                                        placeholder="검색"
+                                        id="search"
+                                    />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bottom_menu">
+                        <ul class="flex space_between">
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">이벤트</button>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">공지 ▼</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">공지사항</a>
+                                        <a href="#">요청건의</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">메인리뷰 ▼</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">PC</a>
+                                        <a href="#">모바일</a>
+                                        <a href="#">디스플레이</a>
+                                        <a href="#">게임</a>
+                                        <a href="#">웹진</a>
+                                        <a href="#">DP DB ▶</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">회원리뷰 ▼</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">게임</a>
+                                        <a href="#">PC</a>
+                                        <a href="#">모바일</a>
+                                        <a href="#">디스플레이</a>
+                                        <a href="#">기타</a>
+                                        <a href="#">필드 테스트</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">소식 ▼</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">스폰서</a>
+                                        <a href="#">PC</a>
+                                        <a href="#">모바일</a>
+                                        <a href="#">디스플레이</a>
+                                        <a href="#">게임</a>
+                                        <a href="#">좋은 정보</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">게임 ▼</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">게임게시판</a>
+                                        <a href="#">게임 갤러리</a>
+                                        <a href="#">회원 게임 리뷰뷰</a>
+                                        <a href="#">게임 할인 정보</a>
+                                        <a href="#">게임 자료실</a>
+                                        <a href="#">게임 평점</a>
+                                        <a href="#">게임 번역 정보</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">커뮤니티 ▼</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">자유게시판</a>
+                                        <a href="#">자유갤러리</a>
+                                        <a href="#">H/W게시판</a>
+                                        <a href="#">H/W갤러리</a>
+                                        <a href="#">H/W 견적</a>
+                                        <a href="#">종합 Q&A</a>
+                                        <a href="#">플웨즈자료실</a>
+                                        <a href="#">A/S 평점</a>
+                                        <a href="#">토론&이슈</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="dropbtn">장터▼</button>
+                                    <div class="dropdown-content">
+                                        <a href="#">회원장터</a>
+                                        <a href="#">방출&기부</a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="dropdown">
+                                    <button
+                                        class="dropbtn"
+                                        style="margin-right: 10px"
+                                    >
+                                        특가
+                                    </button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="frame">
+            <div class="big_slider"></div>
+            <div class="big_slider_control">
+                <div class="big_slider_controller flex">
+                    <div class="big_slider_page">
+                        <span>■</span>
+                        <span>□</span>
+                        <span>□</span>
+                        <span>□</span>
+                    </div>
+                    <div class="big_slider_button">
+                        <button><</button>
+                        <button>></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 내용 -->
+            <div class="main_box1 flex space_between">
+                <div class="main_slide flex">
+                    <div
+                        class="slide_img"
+                        style="background-image: url('slideitem1.jpg')"
+                    ></div>
+                    <div class="slide_content">
+                        <div class="slide_title">
+                            GIGABYTE GeForce RTX 4060 Ti Gaming OC D6
+                        </div>
+                        <div class="slide_explain">
+                            NVIDIA RTX 4000시리즈의 메인스트림의 시작이라고 할
+                            수 있는 RTX 4060 Ti가 출시되었습니다. 성능은
+                            메인스트림에 맞으나 가격이 소비자의 기대에 크게
+                            벗어나 판매량 부진을 겪고 있
+                        </div>
+                    </div>
+                </div>
+                <div class="main_card">
+                    <div class="card_top flex">
+                        <div class="yellowbtn">
+                            <a href="#">이벤트 & 특가 　　　+</a>
+                        </div>
+                        <div class="greybtn">
+                            <a href="#">플웨즈 공지　　　+</a>
+                        </div>
+                    </div>
+                    <div class="card_content">
+                        <ul>
+                            <li class="flex space_between">
+                                <div>WD_Black AN1500 SSD댓글 이벤트</div>
+                                <div>29</div>
+                                <div>2020-12-23</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>씨게이트 바라쿠다 2TB 최저가 맞추기</div>
+                                <div>815</div>
+                                <div>2018-11-21</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>컬러풀 삼행시짓고 LOL 결승 가자! 댓글</div>
+                                <div>11</div>
+                                <div>2018-10-23</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>(재선정)씨게이트 14TB HDD 런칭 기념</div>
+                                <div>159</div>
+                                <div>2018-10-19</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>컬러풀 CN600S SSD 240GB 퀴즈 이벤</div>
+                                <div>78</div>
+                                <div>2018-10-16</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_box1 flex space_between">
+                <div class="main_banner"></div>
+                <div class="main_banner"></div>
+                <div class="main_banner"></div>
+            </div>
+
+            <div class="main_box1 flex space_between">
+                <div class="main_slide flex">
+                    <div class="slide_content">
+                        <div class="slide_title" style="color: #333">
+                            필립스 모니터, 알파스캔 홈페이지 단독 할인 행사 진행
+                        </div>
+                        <div class="slide_explain">
+                            (주)알파스캔이 자사 홈페이지 단독으로 필립스 모니터
+                            2종에 대해 특가 행사를 진행한다고 밝혔다. 7월
+                            21일부터 7월 31일까지 진행되는 이번 행사는 필립스
+                            2개 모델을 대상으
+                        </div>
+                    </div>
+                    <div
+                        class="slide_img"
+                        style="background-image: url('slideitem2.jpg')"
+                    ></div>
+                </div>
+                <div class="main_card">
+                    <div class="card_top flex">
+                        <div class="yellowbtn">
+                            <a href="#">H/W 견적 　　　　+</a>
+                        </div>
+                    </div>
+                    <div class="card_content">
+                        <ul>
+                            <li class="flex space_between">
+                                <div>메인 컴퓨터 구입 및 견적 문의.</div>
+                                <div></div>
+                                <div>2023-04-07</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>요즘 완제품이 더 싼 것 같네요</div>
+                                <div></div>
+                                <div>2021-04-19</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>고수님들 도와주세요ㅠ 컴맹 살려주십시</div>
+                                <div></div>
+                                <div>2021-02-06</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>견적 봐주시면 감사하겠습니당 ㅠㅠ음악</div>
+                                <div></div>
+                                <div>2021-01-03</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>가볍게 구성을 한 번 해보았습니다.</div>
+                                <div></div>
+                                <div>2020-09-18</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_box1 flex space_between">
+                <div class="main_panel">
+                    <div class="panel_top">
+                        <div class="w100 yellowbtn">
+                            <a href="#">H/W 게시판</a>
+                        </div>
+                    </div>
+                    <div class="panel_content">
+                        <ul>
+                            <li class="flex space_between">
+                                <div>AMD 시스템에 사용하는 그래픽카...</div>
+                                <div></div>
+                                <div>2023-07-04</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>채굴 용도로 사용하던 사파이어 라...</div>
+                                <div></div>
+                                <div>2023-03-18</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>이번 AMD 라이젠 라파엘 출시로 P...</div>
+                                <div></div>
+                                <div>2022-09-28</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>5년 만에 그래픽카드를 MSI 지포스...</div>
+                                <div></div>
+                                <div>2022-06-01</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>PCIe4.0의 미친 속도 씨게이트 파이...</div>
+                                <div></div>
+                                <div>2021-08-30</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_panel">
+                    <div class="panel_top flex">
+                        <div class="w50 yellowbtn">
+                            <a href="#">인기 회원리뷰</a>
+                        </div>
+                        <div class="w50 greybtn">
+                            <a href="#">회원리뷰</a>
+                        </div>
+                    </div>
+                    <div class="panel_content flex">
+                        <div
+                            class="panel_img"
+                            style="background-image: url('panel1.jpg')"
+                        ></div>
+                        <div class="panel_content2">
+                            <ul>
+                                <li>다크에덴 SD CBT 너무</li>
+                                <li>
+                                    다크에덴 IP로 귀여운 SD버전 어떻게 나올까
+                                    궁금했는데 기대 이상상
+                                </li>
+                                <li>2023-07-26</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel_content flex">
+                        <div
+                            class="panel_img"
+                            style="background-image: url('panel2.jpg')"
+                        ></div>
+                        <div class="panel_content2">
+                            <ul>
+                                <li>다크에덴의 시작</li>
+                                <li>
+                                    다크에덴 SD가 나오네요 ?? 오늘부터 사전예약
+                                    진행중인데... 보상이
+                                </li>
+                                <li>2023-07-24</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="main_panel">
+                    <div class="panel_top flex">
+                        <div class="w50 yellowbtn">
+                            <a href="#">H/W갤러리</a>
+                        </div>
+                        <div class="w50 greybtn">
+                            <a href="#">자유 갤러리</a>
+                        </div>
+                    </div>
+                    <div class="panel_content flex">
+                        <div
+                            class="panel_img"
+                            style="background-image: url('panel1.jpg')"
+                        ></div>
+                        <div class="panel_content2">
+                            <ul>
+                                <li>외장 SSD 추천 씨게이트</li>
+                                <li>
+                                    디지털 콘텣으의 생산과 사용이 일상화된
+                                    현대를 살아가는 사람들에게
+                                </li>
+                                <li>2023-07-26</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="panel_content flex">
+                        <div
+                            class="panel_img"
+                            style="background-image: url('panel2.jpg')"
+                        ></div>
+                        <div class="panel_content2">
+                            <ul>
+                                <li>에이픽스 GC001</li>
+                                <li>제가 써본 게이밍 의자중에서 최고!!!</li>
+                                <li>2021-11-29</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_box1 flex space_between">
+                <div class="main_panel">
+                    <div class="panel_top">
+                        <div class="w100 yellowbtn">
+                            <a href="#">게임 게시판</a>
+                        </div>
+                    </div>
+                    <div class="panel_content">
+                        <ul>
+                            <li class="flex space_between">
+                                <div>다크에덴 SD사전예약 하네요</div>
+                                <div></div>
+                                <div>2023-07-04</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>타이니 테일즈 감성 가득한 디자인인</div>
+                                <div></div>
+                                <div>2023-07-25</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>퀸즈나이츠가 사전예약을 시작했어요</div>
+                                <div></div>
+                                <div>2023-07-03</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>레딧 api 유료화 전환</div>
+                                <div></div>
+                                <div>2023-06-14</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>[PS콘솔·확장카드]웨스턴 디지털 블..</div>
+                                <div></div>
+                                <div>2023-06-07</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_panel">
+                    <div class="panel_top">
+                        <div class="w100 yellowbtn">
+                            <a href="#">자유 게시판</a>
+                        </div>
+                    </div>
+                    <div class="panel_content">
+                        <ul>
+                            <li class="flex space_between">
+                                <div>해외 여행 갈 땐 와이파이기기...</div>
+                                <div></div>
+                                <div>2023-07-18</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>다들 언제가 가장 그리우십니까?</div>
+                                <div></div>
+                                <div>2023-07-07</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>[문화체육관광부] 2023 이달의 우수</div>
+                                <div></div>
+                                <div>2023-07-04</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>푹푹찌네요... 에어컨 필수인듯듯</div>
+                                <div></div>
+                                <div>2023-07-03</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>3개월만에 흔적 또 남깁니다.</div>
+                                <div></div>
+                                <div>2023-07-02</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main_panel">
+                    <div class="panel_top">
+                        <div class="w100 yellowbtn">
+                            <a href="#">종합 QnA</a>
+                        </div>
+                    </div>
+                    <div class="panel_content">
+                        <ul>
+                            <li class="flex space_between">
+                                <div>기가바이트 어로스 F123Q 모니터</div>
+                                <div></div>
+                                <div>2023-07-04</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>채굴 용도로 사용하던 사파이어 라...</div>
+                                <div></div>
+                                <div>2023-03-18</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>이번 AMD 라이젠 라파엘 출시로 P...</div>
+                                <div></div>
+                                <div>2022-09-28</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>5년 만에 그래픽카드를 MSI 지포스...</div>
+                                <div></div>
+                                <div>2022-06-01</div>
+                            </li>
+                            <li class="flex space_between">
+                                <div>PCIe4.0의 미친 속도 씨게이트 파이...</div>
+                                <div></div>
+                                <div>2021-08-30</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="main_box1">
+                <ul class="flex">
+                    <li class="company"></li>
+                    <li class="company"></li>
+                    <li class="company"></li>
+                    <li class="company"></li>
+                    <li class="company"></li>
+                    <li class="company"></li>
+                </ul>
+            </div>
+        </main>
+
+        <footer>
+            <div class="frame flex">
+                <div class="footer_box1">
+                    <h2>플레어 웨어즈</h2>
+                    <p>
+                        대표 : 박성진<br />
+                        Copyright 2015 PLAYWARES. All rights<br />
+                        reserved.
+                    </p>
+                </div>
+                <div class="footer_box2">
+                    <h3>CONTACT US</h3>
+                    <hr />
+                    <p>
+                        이메일 : webmaster@playwares.com<br />
+                        주소 : 서울시 금천구 가산디지털 1로 STX-V타워 <br />
+                        704호
+                    </p>
+                </div>
+                <div class="footer_box3">
+                    <h3>CONTACT US</h3>
+                    <hr />
+                    <p>
+                        요청/건의 <br />
+                        개인정보취급방침<br />
+                        광고/제휴 문의
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <div class="fixbox flex">
+            <div>로그인</div>
+            <div>회원가입</div>
+            <div>ID/PASS찾기</div>
+        </div>
+    </body>
+</html>
